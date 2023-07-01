@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.limita-secao {
+  max-width: 1094px;
+  margin: auto;
+  position: relative;
+}
+.titulo-subsecao {
+  font-size: 32px;
+  line-height: 48px;
+}
+.paragrafo-subsecao {
+  font-size: 16px;
+  line-height: 24px;
+  color: #383838;
+}
+
+/*/ MENU SUPERIOR /*/
+#menu-superior {
+  height: 560px;
+  width: 100%;
+  background-image: url(./assets/imagens/banner.svg);
+  background-size: cover;
+  /*/background: linear-gradient(to bottom,  rgba(0,0,0, 0.9) 0%,   rgba(0,0,0,0.7) 100%)  Esta informação aqui não está funcionando /*/
+}
+#logo {
+  margin-left: 56px;
+  margin-top: 52px;
+  height: 62px;
+  position: static;
+}
+#titulo-banner {
+  height: 102px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 51.4px;
+  margin-top: 71px;
+  font-weight: 400;
+}
+#paragrafo-banner {
+  height: 90px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+/*/ MENU INFORMACIONAL /*/
+
+#menu-informacional {
+  background-color: rgba(234, 236, 229, 1);
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+#grid-informacional {
+  display: grid;
+  grid-auto-flow: column;
+}
+.texto-informacional {
+  font-size: 20px;
+  line-height: 30px;
+  color: #122235;
+  display: flex;
+  align-items: center;
+}
+.icone-informacional {
+  margin-right: 25px;
+}
+
+/*/ DEPOIMENTOS /*/
+
+#grid-depoimentos {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 80px 0;
+}
+#textos-depoimentos {
+  margin-left: 52px;
+}
+#titulo-depoimentos {
+  color: #247ba0;
+  margin: 17px 0;
+}
+
+/*/ CARROSSEL /*/
+
+#secao-carrossel {
+  background-color: #247ba0;
+  padding: 96px 0;
+}
+#titulo-carrossel {
+  color: #fff;
+  text-align: center;
+}
+#carrossel-flex-setas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 64px;
+}
+/*/Setas /*/
+#SetaL {
+  margin-right: 0;
+
+  left: 35%;
+  top: 25%;
+}
+#SetaR {
+  margin-left: 0;
+}
+.container-setas {
+  position: relative;
+  width: 78px;
+  height: 78px;
+}
+.seta {
+  cursor: pointer;
+  position: absolute;
+}
+.seta:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.5);
+}
+#grid-cards {
+  display: grid;
+  grid-auto-flow: column;
+  width: 1094px;
+  gap: 33px;
+}
+.card-carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  padding: 32px 40px;
+  gap: 24px;
+
+  background-color: #fff;
+}
+.card-carrossel:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.foto-aluno {
+  height: 96px;
+  width: 96px;
+
+  border-radius: 48px;
+}
+.texto-cardaluno {
+  width: 332px;
+}
+.nome-aluno {
+  margin-top: 30px;
+
+  font-weight: bold;
+}
+
+/*/FORMULARIOS/*/
+#secao-formulario {
+  height: 550px;
+  padding-top: 20px;
+  align-items: center;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  margin: 40px auto;
+  gap: 40px;
+}
+form input {
+  height: 53px;
+
+  border-radius: 8px;
+  border-width: 0;
+
+  background-color: #eaece5;
+  
+  padding-left: 20px;
+
+  font-size: 16px;  
+}
+
+input:focus{
+  background-color: #e5e5e4;
+  border-width: 1px;
+  border-color: #383838;
+}
+
+
+button {
+  background-color: #247ba0;
+  
+  border-width: 0;
+  border-radius: 8px;
+  height: 53px;
+  width: 335px;
+
+  margin-left: 10%;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+button:hover{
+  background-color: #5eb0d4;
+  transform: translateY(-7);
+  transition-duration: 0.4s;
+  box-shadow: 0 15px 20px #10435b35;
+}
+button:active{
+  background-color: #10435b;
+}
